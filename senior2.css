@@ -1,0 +1,103 @@
+.wrapper { 	background-image:url(allbackground.jpg);
+		background-repeat: no-repeat;
+		background-size:300%;
+		color:#000000;
+		width:80%;
+		margin:auto;
+		min-width:1400px;}
+.register {	float: right;}
+a {text-decoration:none;}
+.logoimage {background-image: url(background.png);
+		text-align:center;}
+a {text-decoration:none;}	
+.header { background-repeat: no-repeat;
+	background-attachment: fixed;
+		}	
+.response {background-color: #32c7a9;}
+
+h4 {text-align:left;
+	margin:0;
+	padding:0;}
+
+h2 {text-align:left;}
+
+p {	text-align: left;
+	padding-right: 20px;}
+
+ul {list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #3250c7;
+	overflow:hidden;}
+
+li {float: left;
+	border-right:2px solid #FFFFFF;}
+
+li a {display: block;
+	color: #ffffff;
+	text-align: center;
+	padding: 12px 12px;
+	text-decoration: none;}
+#latestNews {border:5px ridge #3239c7;
+		width: 1400px;
+		padding: 8px;
+		float:left;}
+
+legend {text-align:left;
+	font-family:serif, Georgia, Times New Roman;
+	font-weight:bold;
+	font-size:24px;}	
+
+figure {float: left;}
+			
+li a:hover {background-color: yellow;}
+footer{font-size:1.0em;
+	text-align:center;
+	color:#006600;
+	background-color:#ffffff;
+	padding-top:8px;
+	clear:both;}
+#locatedright{margin:10px;
+		float:right;}
+.contactsInfo {	border: 2px ridge #000000;
+				margin: 0;
+				max-width: 250px;
+				padding: 20px;}
+.mapsOptions {	margin: auto;
+				padding: 20px;}
+				
+.mapsLook {	max-width: 800px;
+			min-width:500px;
+			border: 2px ridge #000000;
+			float: right;
+			padding: 10px;}
+#map {	width: 500px;
+        height: 400px;
+		border: 1px ridge #000000;}
+.classButtons {margin: auto;
+		padding: 30px;
+		border:2px ridge #ffffff;
+		max-width:500px;}
+.chooselist {	border:3px ridge #000000;
+			float: left;
+			text-align: left;
+			padding: 10px;
+			margin-top:0px;
+			max-width: 300px;}
+.servicepicture{margin:0;
+		text-align:center;}				
+.servicepicture img{border-style:none;}
+.servicepicture a {text-decoration:none;
+			font-style:italic;}
+#nasiInfo{display:none;
+text-align:center;
+}
+#maggiInfo{display:none;
+text-align:center;
+}
+#rotiInfo{display:none;
+text-align:center;
+}
+figcaption{	font-size: 120%;
+		font-weight: bold;
+		text-align:center;}

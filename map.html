@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>General Care Services for the Elderly</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="senior2.css"> 
+</head>
+<body>
+	<div class="wrapper">
+	<header>
+	<div class="register">
+	<a href="loginPage.html">Log in</a>&nbsp;
+	<a href="signupPage.html">Sign up</a>
+	</div>
+	<div class="logoimage">
+	<a href="mainPage.html"><img src="logo.png" alt="General Care Services for the Elderly" height="200" width="500"></a>
+	</div>
+	</header>
+	<ul>
+		<li><a href="mainPage.html">Home Page</a></li>
+		<li><a href="aboutusPage.html">About us</a></li>
+		<li><a class="response" href="searchservicesPage.html">Search Services</a></li>
+		<li><a href="companyRegister.html">Company Register</a></li>
+	</ul>
+	<main>
+	<form method="post" action="http://webdevbasics.net/scripts/demo.php/" autocomplete="off">
+	<fieldset><legend>Map</legend>
+	<div class="mapsLook">
+		<h2>Google Maps location</h2>
+		<div id="map"></div>
+		<script>
+		  function initMap() {
+			var mapDiv = document.getElementById('map');
+			var map = new google.maps.Map(mapDiv, {
+			  center: {lat: 3.13, lng: 101.67},
+			  zoom: 15
+			});
+		  }
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+			async defer></script>
+		<div class="mapsOptions">
+			<p>Pick service facility location: </p>
+			<select name="storeLocation" id="storeLocation">
+				<option value="Jalan Sultan Azlan Shah">Jalan Sultan Azlan Shah</option>
+				<option value="Jalan Pahang">Jalan Pahang</option>
+				<option value="Jalan Pantai Murni">Jalan Pantai Murni</option>
+				<option value="Bangsar">Bangsar</option>
+				<option value="Ampang">Ampang</option>
+				<option value="Damansara">Damansara</option>
+			</select>
+			<input type="submit" value="Go">
+		</div>
+	</div>
+	<div class="contactsInfo">
+	<h2>Contact to us</h2>
+	<p>Phone: <a href="+60-17-123-4567">+60-17-123-4567</a><br>
+	Fax: <a href="+60-03-123-4567">+60-03-123-4567</a><br>
+	E-mail: <a href="mailto:leejongbum2018@gmail.com">leejongbum2018@gmail.com</a></p>
+	</div>
+	<br>
+	<div class="contactsInfo">
+	<h2>Please leave some feedback!</h2>
+	<input type="radio" name="Excellent" value="Excellent">Excellent<br>
+	<input type="radio" name="Good" value="Good">Good<br>
+	<input type="radio" name="Average" value="Average">Average<br>
+	<input type="radio" name="Bad" value="Bad">Bad<br>
+	<input type="radio" name="Too Bad" value="Bad">Too Bad<br><br>
+	<input type="submit" value="click"> <br>
+	</div>
+	</fieldset>
+	</form>
+	</main>
+	<footer>
+	<small><i>Copyright &copy; 2018 General Care Services for the Elderly</i></small>
+	<a href="mailto:leejongbum2018@gmail.com">leejongbum2018@gmail.com</a>
+	</footer>
+	</div>
+</body>
+</html>

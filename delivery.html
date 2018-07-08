@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>General Care Services for the Elderly</title>
+	<meta charset="utf-8">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="senior2.css">
+	<script>
+	$(document).ready(function(){
+		$("#nasiMore").click(function(){
+			$("#nasiInfo").toggle();
+			});
+			});
+	$(document).ready(function(){
+		$("#maggiMore").click(function(){
+			$("#maggiInfo").toggle();
+			});
+			});
+	$(document).ready(function(){
+		$("#rotiMore").click(function(){
+			$("#rotiInfo").toggle();
+			});
+			});
+	$(document).ready(function(){
+		$('.servicepicture a').click(function(){
+			var servicepictureHref=$(this).attr('href');
+			var servicepictureAlt=$(this).attr('title');
+			$('figure').css('display','none');
+			$('figure img').attr({src:servicepictureHref, alt:servicepictureAlt});
+			$('figcaption').html(servicepictureAlt);
+			$('figure').fadeToggle(500);
+			return false;
+			});
+			});	
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+	<header>
+	<div class="register">
+	<a href="loginPage.htmll">Log in</a>&nbsp;
+	<a href="signupPage.html">Sign up</a>
+	</div>
+	<div class="logoimage">
+	<a href="mainPage.html"><img src="logo.png" alt="General Care Services for the Elderly" height="200" width="500"></a>
+	</div>
+	</header>
+	<ul>
+		<li><a href="mainPage.html">Home Page</a></li>
+		<li><a href="aboutusPage.html">About us</a></li>
+		<li><a class="response" href="searchservicesPage.html">Search Services</a></li>
+		<li><a href="companyRegister.html">Company Register</a></li>
+	</ul>
+	<main>
+	<form method="post" action="http://webdevbasics.net/scripts/demo.php/" autocomplete="off">
+	<div id="buy"><fieldset><legend>Order the food</legend>
+	<div class="chooselist">Food type:
+		<select name="type" id="type">
+			<option value="rice">rice</option>
+			<option value="noodle">noodle</option>
+			<option value="bread">bread</option>
+		</select><br><br>
+		Food size: 
+		<select name="size" id="size">
+			<option value="small">small</option>
+			<option value="middle">middle</option>
+			<option value="big">big</option>
+		</select><br><br>
+		Minimum food price: 
+		<select name="minprice" id="minprice">
+			<option value="Price(no minimum)">Price(no minimum)</option>
+			<option value="RM10">RM10</option>
+			<option value="RM30">RM30</option>
+			<option value="RM50">RM50</option>
+			<option value="RM80">RM80</option>
+			<option value="RM100">RM100</option>
+		</select><br><br>
+		Maximum food price: 
+		<select name="maxprice" id="maxprice">
+			<option value="Price(no maximum)">Price(no maximum)</option>
+			<option value="RM10">RM10</option>
+			<option value="RM30">RM30</option>
+			<option value="RM50">RM50</option>
+			<option value="RM80">RM80</option>
+			<option value="RM100">RM100</option>
+		</select><br><br>
+		The distance from home: 
+		<select name="maxDistance" id="maxDistance">
+			<option value="Distance(no max)">Distance(no max)</option>
+			<option value="0km">0km</option>
+			<option value="5km">5km</option>
+			<option value="10km">10km</option>
+			<option value="30km">30km</option>
+			<option value="50km">50km</option>
+		</select><br><br>
+		Material: 
+		<select name="material" id="material">
+			<option value="chicken">Chicken</option>
+			<option value="egg">Egg</option>
+			<option value="beef">Beef</option>
+			<option value="shrimp">Shrimp</option>
+			<option value="cheese">Cheese</option>
+		</select><br><br>
+		Enter keyword:
+		<input type="text" name="finding" id="finding" size="30" placeholder="e.g: restaurant name" tabindex="1">
+		<br><input type="image" src="findingbutton.jpg" height="25" width="25" alt="finding">
+	</div>
+	<fieldset><legend>Information</legend>
+		<figure><figcaption>nasi goreng</figcaption>
+		<img src="nasi1.jpeg" width="830" height="400" alt="nasi1"></figure>
+		<div class="servicepicture">
+			<a href="nasi1.jpeg" title="nasi goreng">
+			<img src="nasi1.jpeg" width="120" height="100" alt="nasi1"></a>
+			<a href="nasi2.jpg" title="nasi goreng">
+			<img src="nasi2.jpg" width="120" height="100" alt="nasi2"></a>
+			<a href="nasi3.jpeg" title="nasi goreng">
+			<img src="nasi3.jpeg" width="120" height="100" alt="nasi3"></a>
+		</div>
+		<a href="#" id="nasiMore">Moreinfo</a>
+		<div id="nasiInfo">
+		<dl>
+			<dt>Price: RM55</dt>
+			<dt>type: rice</dt>
+			<dt>Size: middle</dt>
+			<dt>Location : Bangsar</dt>
+			<dt>Material : shrimp, chicken</dt>
+			<dd></dd>
+		</dl>
+		</div>
+		<br><br><br>
+		<figure><figcaption>Maggi goreng</figcaption>
+		<img src="maggi1.jpg" width="830" height="400" alt="maggi1"></figure>
+		<div class="servicepicture">
+			<a href="maggi1.jpg" title="maggi goreng">
+			<img src="maggi1.jpg" width="120" height="100" alt="maggi1"></a>
+			<a href="maggi2.jpeg" title="maggi goreng">
+			<img src="maggi2.jpeg" width="120" height="100" alt="maggi2"></a>
+			<a href="maggi3.jpg" title="maggi goreng">
+			<img src="maggi3.jpg" width="120" height="100" alt="maggi3"></a>
+		</div>
+		<a href="#" id="maggiMore">Moreinfo</a>
+		<div id="maggiInfo">
+		<dl>
+			<dt>Price: RM20</dt>
+			<dt>type: rice</dt>
+			<dt>Size: small</dt>
+			<dt>Location : Ampang</dt>
+			<dt>Material : egg, beef</dt>
+			<dd></dd>
+		</dl>
+		</div>
+		<br><br><br>
+		<figure><figcaption>Roti boy</figcaption>
+		<img src="roti1.jpg" width="830" height="400" alt="roti1"></figure>
+		<div class="servicepicture">
+			<a href="roti1.jpg" title="roti boy">
+			<img src="roti1.jpg" width="120" height="100" alt="roti1"></a>
+			<a href="roti2.jpg" title="roti boy">
+			<img src="roti2.jpg" width="120" height="100" alt="roti2"></a>
+			<a href="roti3.jpg" title="roti boy">
+			<img src="roti3.jpg" width="120" height="100" alt="roti3"></a>
+		</div>
+		<a href="#" id="rotiMore">Moreinfo</a>
+		<div id="rotiInfo">
+		<dl>
+			<dt>Price: RM85</dt>
+			<dt>type: bread</dt>
+			<dt>Size: big </dt>
+			<dt>Location : Damansara</dt>
+			<dt>Material : cheese</dt>
+			<dd></dd>
+		</dl>
+		</div>
+		<a href="https://www.foodpanda.my"><img src="purchase.jpg" alt="purchase" height="150" width="150" id="locatedright"></a>
+	</fieldset>
+	</fieldset>
+	</div>
+	</form>
+	</main>
+	<footer>
+	<small><i>Copyright &copy; 2018 General Care Services for the Elderly</i></small>
+	<a href="mailto:leejongbum2018@gmail.com">leejongbum2018@gmail.com</a>
+	</footer>
+	</div>
+</body>
+</html>
